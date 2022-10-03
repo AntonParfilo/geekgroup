@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!--  NoUiSlider -->
+    <link href="/src/nouislider/nouislider.min.css" rel="stylesheet">
+    <script src="/src/nouislider/nouislider.min.js"></script>
+    <!--  Main CSS -->
+    <link rel="stylesheet" href="/src/css/main.css">
+    <title>GeekGroup</title>
+</head>
+<body>
+    <header class="header">
+        <!-- ###########################  SEARCH FORM ################################### -->
+        <div class="burger__search">
+            <svg class="burger__search_close">
+                <use xlink:href="/src/img/header/sprite-header-menu.svg#close"></use>
+            </svg>
+            <div class="burger__header__serach-wrapper">
+                <input class="burger__header__search" type="text" placeholder="Знайти речі або бренди">
+            </div>
+        </div>
+        <!-- ###########################  BURGER MENU ################################### -->
+        <div class="header__burger_menu">
+            <svg class="burger__closeBtn">
+                <use xlink:href="/src/img/header/sprite-header-menu.svg#close"></use>
+            </svg>
+            <div class="burger__header">
+                <select class="burger__form-select" aria-label="Default select example">
+                    <option selected>Укр</option>
+                    <option value="1">Eng</option>
+                </select>
+                <div class="burger__header__mainmenu">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="/src/img/header/sprite-header-menu.svg#core"></use>
+                        </svg>
+                        <span class="action-number">8</span>
+                    </a>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="/src/img/header/sprite-header-menu.svg#message"></use>
+                        </svg>
+                        <span class="action-number action-number-red">3</span>
+                    </a><a href="#">
+                        <svg>
+                            <use xlink:href="/src/img/header/sprite-header-menu.svg#cart"></use>
+                        </svg>
+                        <span class="action-number">3</span>
+                    </a>
+                </div>
+                <div class="burger__header__user-menu dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton11" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="/src/img/header/Avatar.png" alt="Avatar">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton11">
+                      <li><a class="dropdown-item" href="#">Menu1</a></li>
+                      <li><a class="dropdown-item" href="#">Menu2</a></li>
+                      <li><a class="dropdown-item" href="#">Menu3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="burger__menu">
+                <nav class="burger__header__menu">
+                    <ul>
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Жінкам</a></li>
+                        <li><a href="#">Чоловікам</a></li>
+                        <li><a href="#">Дитячі речі</a></li>
+                        <li><a href="#">Аукціон</a></li>
+                        <li><a href="#">Бренди</a></li>
+                        <li><a href="#">Акції</a></li>
+                        <li><a href="#">Аутентифікація</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- ###########################  HEADER ################################### -->
+        <div class="header__topline">
+            <img src="/src/img/header/image17.png" alt="headerline image1">
+            <img src="/src/img/header/image18.png" alt="headerline image2">
+            <p>Брендовий верхній одяг від 899 грн</p>
+        </div>
+        <div class="header__wrapper container">
+            <div class="header__bar">
+                <div class="logo__wrapper">
+                    <img class="logo" src="/src/img/header/logo.png" alt="Logo">
+                </div>
+                <div class="header__serach-wrapper">
+                    <input class="header__search" type="text" placeholder="Знайти речі або бренди">
+                </div>
+                <a href="#" class="header__button">Додати товар</a>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Укр</option>
+                    <option value="1">Eng</option>
+                </select>
+                <div class="header__mainmenu">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="/src/img/header/sprite-header-menu.svg#core"></use>
+                        </svg>
+                        <span class="action-number">8</span>
+                    </a>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="/src/img/header/sprite-header-menu.svg#message"></use>
+                        </svg>
+                        <span class="action-number action-number-red">3</span>
+                    </a><a href="#">
+                        <svg>
+                            <use xlink:href="/src/img/header/sprite-header-menu.svg#cart"></use>
+                        </svg>
+                        <span class="action-number">3</span>
+                    </a>
+                </div>
+                <div class="header__user-menu dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton12" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="/src/img/header/Avatar.png" alt="Avatar">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton12">
+                      <li><a class="dropdown-item" href="#">Menu1</a></li>
+                      <li><a class="dropdown-item" href="#">Menu2</a></li>
+                      <li><a class="dropdown-item" href="#">Menu3</a></li>
+                    </ul>
+                </div>
+        <!-- ###########################  BURGER BUTTON ################################### -->
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li class="active"><a  href="#">Каталог</a></li>
+                    <li><a href="#">Жінкам</a></li>
+                    <li><a href="#">Чоловікам</a></li>
+                    <li><a href="#">Дитячі речі</a></li>
+                    <li><a href="#">Аукціон</a></li>
+                    <li><a href="#">Бренди</a></li>
+                    <li><a href="#">Акції</a></li>
+                    <li><a href="#">Аутентифікація</a></li>
+                    <li><a href="#">Блог</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ################################ CONTENT HEADER ###################################### -->
+    <section class="content container">
+        <header>
+            <div class="content__path">
+                <p>Головна</p>
+                <span>/ Каталог одягу</span>
+            </div>
+            <div class="content__title">
+                <h1>Каталог одягу</h1>
+            </div>
+            <div class="content__filters">
+                <h2 class="content__filter_button">Фільтри</h2>
+                <div class="content__filters_select">
+                    <p>Сортувати за:</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            За замовчуванням &nbsp;&nbsp;
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">За рейтингом</a></li>
+                          <li><a class="dropdown-item" href="#">Від дешевих до дорогих</a></li>
+                          <li><a class="dropdown-item" href="#">Від дорогих до дешевих</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ################################ CONTENT TOOLBAR ###################################### -->
+        <div class="content__wrapper">
+            <div class="row">
+                <div class="col-md-4 col-lg-3 col-sm-12 content__toolbar_wrapper">
+                    <div class="content__toolbar">
+                        <div class="content__toolbar accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse1" aria-expanded="true" aria-controls="panelsStayOpen-collapse1">
+                                    Категорії
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapse1" class="accordion-collapse collapse show" >
+                                <div class="accordion-body toolbar__categories">
+                                    <a href="#">Жінкам</a>
+                                    <a href="#">Чоловікам</a>
+                                    <a href="#">Дитячі речі</a>
+                                    <a href="#">Аукціон</a>
+                                    <a href="#">Бренди</a>
+                                    <a href="#">Акції</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2" aria-expanded="false" aria-controls="panelsStayOpen-collapse2">
+                                    Ціна
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse">
+                                <div class="accordion-body toolbar__slider">
+                                    <div id="slider"></div>
+                                    <div class="toolbar__prices">
+                                        <div class="toolbar__from">
+                                            <p>Від</p>
+                                            <input id="from_value">
+                                        </div>
+                                        <div class="toolbar__to">
+                                            <p>До</p>
+                                            <input id="to_value">
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingThree1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapse3">
+                                    Продавець
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse">
+                                <div class="accordion-body toolbar__salesman">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <label class="form-check-label">
+                                            <span>Продавець 1</span><span class="check_num">(64)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <label class="form-check-label"  >
+                                            <span>Продавець 2</span><span class="check_num">(16)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <label class="form-check-label"  >
+                                            <span>Продавець 3</span><span class="check_num">(24)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree2">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
+                                      Бренд
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse">
+                                    <div class="accordion-body toolbar__salesman">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Бренд 1</span><span class="check_num">(64)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Бренд 2</span><span class="check_num">(16)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Бренд 3</span><span class="check_num">(24)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree3">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5">
+                                      Стать
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse">
+                                    <div class="accordion-body toolbar__salesman">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                 <span>Стать 1</span><span class="check_num">(64)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Стать 2</span><span class="check_num">(16)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Стать 3</span><span class="check_num">(24)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree4">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false" aria-controls="panelsStayOpen-collapse6">
+                                    Розмір
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse">
+                                  <div class="accordion-body">
+                                    <div class="accordion-body toolbar__salesman">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Розмір  1</span><span class="check_num">(64)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Розмір 2</span><span class="check_num">(16)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Розмір 3</span><span class="check_num">(24)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree5">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7" aria-expanded="false" aria-controls="panelsStayOpen-collapse7">
+                                    Колір
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapse7" class="accordion-collapse collapse">
+                                    <div class="accordion-body toolbar__salesman">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Колір  1</span><span class="check_num">(64)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Колір 2</span><span class="check_num">(16)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Колір 3</span><span class="check_num">(24)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree6">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse8" aria-expanded="false" aria-controls="panelsStayOpen-collapse8">
+                                    Матеріал
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapse8" class="accordion-collapse collapse">
+                                    <div class="accordion-body toolbar__salesman">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Матеріал  1</span><span class="check_num">(64)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Матеріал 2</span><span class="check_num">(16)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Матеріал 3</span><span class="check_num">(24)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree7">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse9" aria-expanded="false" aria-controls="panelsStayOpen-collapse9">
+                                      Сезон
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapse9" class="accordion-collapse collapse">
+                                    <div class="accordion-body toolbar__salesman">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Сезон  1</span><span class="check_num">(64)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Сезон 2</span><span class="check_num">(16)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Сезон 3</span><span class="check_num">(24)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree8">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse10" aria-expanded="false" aria-controls="panelsStayOpen-collapse10">
+                                      Стиль
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapse10" class="accordion-collapse collapse">
+                                    <div class="accordion-body toolbar__salesman">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Стиль  1</span><span class="check_num">(64)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Стиль 2</span><span class="check_num">(16)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label"  >
+                                                <span>Стиль 3</span><span class="check_num">(24)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+    <!-- ################################ CONTENT MAIN ###################################### -->
+                <div class="col-md-8 col-lg-9 col-sm-12 content__main">
+                    <div class="row content__row">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="card">
+                                <img class="card__favorite" src="/src/img/card-icons/heart.png" alt="Add Favorite">
+                                <img src="/src/img/clothing/image2.png" class="content__card_img" alt="Clothing">
+                                <div class="card-body">
+                                    <div class="card__top">ТОП</div>
+                                    <h3 class="card-brand">LOUIS VUITTON</h3>
+                                    <a href="#"><h5 class="card-title">Темно-сині джинси Louis Vuitton</h5></a>
+                                  <footer class="card__footer">
+                                    <div class="card__footer_topline">
+                                        <span>5 499</span>
+                                        <span class="topline__location">Херсон</span>
+                                    </div>
+                                    <div class="card__footer_bootomline">
+                                        <span>3 799</span>
+                                        <div>
+                                            <img src="/src/img/card-icons/1.png" alt="avatar">
+                                            <span class="bottomline__salesman">LoveBrand</span>
+                                        </div>
+                                    </div>
+                                  </footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="card">
+                                <img class="card__favorite" src="/src/img/card-icons/heart.png" alt="Add Favorite">
+                                <img src="/src/img/clothing/image3.png" class="content__card_img" alt="Clothing">
+                                <div class="card-body">
+                                    <div class="card__top">ТОП</div>
+                                    <h3 class="card-brand">THOM BROWNE</h3>
+                                    <a href="#"><h5 class="card-title">Чорний піджак Thom Browne</h5></a>
+                                  <footer class="card__footer">
+                                    <div class="card__footer_topline">
+                                        <span>11 999</span>
+                                        <span class="topline__location">Хмельницький</span>
+                                    </div>
+                                    <div class="card__footer_bootomline">
+                                        <span>8 599</span>
+                                        <div>
+                                            <img src="/src/img/card-icons/2.png" alt="avatar">
+                                            <span class="bottomline__salesman">Sell_For_Men</span>
+                                        </div>
+                                    </div>
+                                  </footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="card">
+                                <img class="card__favorite" src="/src/img/card-icons/heart.png" alt="Add Favorite">
+                                <img src="/src/img/clothing/image4.png" class="content__card_img" alt="Clothing">
+                                <div class="card-body">
+                                    <h3 class="card-brand">CANALI</h3>
+                                    <a href="#"><h5 class="card-title">Вовняний піджак Canali</h5></a>
+                                  <footer class="card__footer">
+                                    <div class="card__footer_topline">
+                                        <span>4 999</span>
+                                        <span class="topline__location">Хмельницький</span>
+                                    </div>
+                                    <div class="card__footer_bootomline">
+                                        <span>2 599</span>
+                                        <div>
+                                            <img src="/src/img/card-icons/2.png" alt="avatar">
+                                            <span class="bottomline__salesman">Sell_For_Men</span>
+                                        </div>
+                                    </div>
+                                  </footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="card">
+                                <img class="card__favorite" src="/src/img/card-icons/heart.png" alt="Add Favorite">
+                                <img src="/src/img/clothing/Frame4.png" class="content__card_img" alt="Clothing">
+                                <div class="card-body">
+                                    <h3 class="card-brand">LOUIS VUITTON</h3>
+                                    <a href="#"><h5 class="card-title">Клатч Louis Vuitton Limelight</h5></a>
+                                  <footer class="card__footer">
+                                    <div class="card__footer_topline">
+                                        <span>4 999</span>
+                                        <span class="topline__location">Дніпро</span>
+                                    </div>
+                                    <div class="card__footer_bootomline">
+                                        <span>3 499</span>
+                                        <div>
+                                            <img src="/src/img/card-icons/3.png" alt="avatar">
+                                            <span class="bottomline__salesman">Brandear</span>
+                                        </div>
+                                    </div>
+                                  </footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="card">
+                                <img class="card__favorite" src="/src/img/card-icons/heart.png" alt="Add Favorite">
+                                <img src="/src/img/clothing/image5.png" class="content__card_img" alt="Clothing">
+                                <div class="card-body">
+                                    <h3 class="card-brand">ELENA GHISELINI</h3>
+                                    <a href="#"><h5 class="card-title">Сумка з декором Elena Ghisellini</h5></a>
+                                  <footer class="card__footer">
+                                    <div class="card__footer_topline">
+                                        <span>1 999</span>
+                                        <span class="topline__location">Дніпро</span>
+                                    </div>
+                                    <div class="card__footer_bootomline">
+                                        <span>1 599</span>
+                                        <div>
+                                            <img src="/src/img/card-icons/3.png" alt="avatar">
+                                            <span class="bottomline__salesman">Sell_For_Men</span>
+                                        </div>
+                                    </div>
+                                  </footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="card">
+                                <img class="card__favorite" src="/src/img/card-icons/heart.png" alt="Add Favorite">
+                                <img src="/src/img/clothing/image6.png" class="content__card_img" alt="Clothing">
+                                <div class="card-body">
+                                    <h3 class="card-brand">ACNE</h3>
+                                    <a href="#"><h5 class="card-title">Бомбер Acne на блискавці</h5></a>
+                                  <footer class="card__footer">
+                                    <div class="card__footer_topline">
+                                        <span>5 999</span>
+                                        <span class="topline__location">Київ</span>
+                                    </div>
+                                    <div class="card__footer_bootomline">
+                                        <span>4 199</span>
+                                        <div>
+                                            <img src="/src/img/card-icons/4.png" alt="avatar">
+                                            <span class="bottomline__salesman">Alexalex</span>
+                                        </div>
+                                    </div>
+                                  </footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="card">
+                                <img class="card__favorite" src="/src/img/card-icons/heart.png" alt="Add Favorite">
+                                <img src="/src/img/clothing/Frame7.png" class="content__card_img" alt="Clothing">
+                                <div class="card-body">
+                                    <h3 class="card-brand">GUCCI</h3>
+                                    <a href="#"><h5 class="card-title">Довга сукня Gucci</h5></a>
+                                  <footer class="card__footer">
+                                    <div class="card__footer_topline">
+                                        <span>11 999</span>
+                                        <span class="topline__location">Рівне</span>
+                                    </div>
+                                    <div class="card__footer_bootomline">
+                                        <span>8 599</span>
+                                        <div>
+                                            <img src="/src/img/card-icons/6.png" alt="avatar">
+                                            <span class="bottomline__salesman">SellBuy</span>
+                                        </div>
+                                    </div>
+                                  </footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="card">
+                                <img class="card__favorite" src="/src/img/card-icons/heart.png" alt="Add Favorite">
+                                <img src="/src/img/clothing/image7.png" class="content__card_img" alt="Clothing">
+                                <div class="card-body">
+                                    <h3 class="card-brand">CHANEL</h3>
+                                    <a href="#"><h5 class="card-title">Помаранчевий бомбер Woolrich</h5></a>
+                                  <footer class="card__footer">
+                                    <div class="card__footer_topline">
+                                        <span>1 999</span>
+                                        <span class="topline__location">Кропивницький</span>
+                                    </div>
+                                    <div class="card__footer_bootomline">
+                                        <span>1 599</span>
+                                        <div>
+                                            <img src="/src/img/card-icons/5.png" alt="avatar">
+                                            <span class="bottomline__salesman">Deeva_Sofia</span>
+                                        </div>
+                                    </div>
+                                  </footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="card">
+                                <img class="card__favorite" src="/src/img/card-icons/heart.png" alt="Add Favorite">
+                                <img src="/src/img/clothing/image8.png" class="content__card_img" alt="Clothing">
+                                <div class="card-body">
+                                    <h3 class="card-brand">HACHE</h3>
+                                    <a href="#"><h5 class="card-title">Салатове пальто Hache</h5></a>
+                                  <footer class="card__footer">
+                                    <div class="card__footer_topline">
+                                        <span>5 999</span>
+                                        <span class="topline__location">Київ</span>
+                                    </div>
+                                    <div class="card__footer_bootomline">
+                                        <span>4 199</span>
+                                        <div>
+                                            <img src="/src/img/card-icons/1.png" alt="avatar">
+                                            <span class="bottomline__salesman">LoveBrand</span>
+                                        </div>
+                                    </div>
+                                  </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    <!-- ################################ CONTENT PAGINATION ###################################### -->
+                    <div class="row">
+                        <div class="content__pagination">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                  <li class="page-item nav__prev"><a class="page-link" href="#">Попередня</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item hideToMobile"><a class="page-link" href="#">4</a></li>
+                                  <li class="page-item hideToMobile"><a class="page-link" href="#">5</a></li>
+                                  <li class="page-item hideToMobile"><a class="page-link" href="#">6</a></li>
+                                  <li class="page-item hideToMobile"><a class="page-link" href="#">7</a></li>
+                                  <li class="page-item hideToMobile"><a class="page-link" href="#">8</a></li>
+                                  <li class="page-item nav__next"><a class="page-link" href="#">Наступна</a></li>
+                                </ul>
+                              </nav>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ################################ CONTENT FOOTER ###################################### -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer__row">
+                <div class="col-md-3 col-sm-6">
+                    <ul>
+                        <li><a href="#">Довідка для покупців</a></li>
+                        <li><a href="#">Отримати підтримку</a></li>
+                        <li><a href="#">Як купувати</a></li>
+                        <li><a href="#">Як залишити корисний відгук</a></li>
+                        <li><a href="#">Програма Захисту Покупців</a></li>
+                        <li><a href="#">Рекомендації з безпечних покупок</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <ul>
+                        <li><a href="#">Довідка для продавців</a></li>
+                        <li><a href="#">Як почати продавати</a></li>
+                        <li><a href="#">Тарифи</a></li>
+                        <li><a href="#">Угода користувача</a></li>
+                        <li><a href="#">Політика конфіденційності</a></li>
+                        <li><a href="#">Правила користування порталом</a></li>
+                        <li><a href="#">Бонусна програма</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <ul>
+                        <li><a href="#">Про нас</a></li>
+                        <li><a href="#">Довідка та FAQ</a></li>
+                        <li><a href="#">Захист легальності контенту</a></li>
+                        <li><a href="#">Адміністрація</a></li>
+                        <li><a href="#">Вакансії</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h3>Мобільний додаток</h3>
+                    <a href="#"><img src="/src/img/footer/google-play.png" alt="Mobile App"></a>
+                </div>
+            </div>
+            <div class="row footer__copyrates">
+                <p>© 2022 Monvalise</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ПОДКЛЮЧЕНИЕ JavaScript -->
+    <script src="/src/js/main.js"></script>
+</body>
+</html>

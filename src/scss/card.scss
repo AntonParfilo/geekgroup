@@ -1,0 +1,121 @@
+.content__row{
+    .col-lg-4{
+        margin-bottom: 24px;
+    }
+}
+.card{
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #EFF1F1;
+    border-radius: 4px;
+    &:hover{
+        box-shadow: 0 0 5px #ccc;
+    }
+    .card__favorite{
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .content__card_img{
+        height: 100%;
+        max-height: 263px;
+        // padding: 45px 52px 0 53px;
+        display: block;
+        margin: 45px auto 0;
+    }
+    .card-body{
+        padding: 46px 24px 24px;
+        position: relative;
+        .card__top{
+            position: absolute;
+            top: -11px;
+            left: 24px;
+            width: 38px;
+            height: 23px;
+            background-color: #B4FFF0;
+            font-size: 10px;
+            color: #00382F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            &:hover{
+                cursor: default;
+            }
+        }
+        .card-brand{
+            font-weight: 500;
+            font-size: 10px;
+            color: #5C5F60;
+            font-family: 'Stolzl-Medium';
+        }
+        a{
+            text-decoration: none;
+        }
+        .card-title{
+            color: #2D3132;
+            font-size: 14px;
+        }
+        .card__footer{
+            display: flex;
+            flex-direction: column;
+            margin-top: 26px;
+            width: 100%;
+            .card__footer_topline{
+                margin-bottom: 5px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                span{
+                    color: #747778;
+                    font-size: 12px;
+                    text-decoration: line-through;
+                }
+                .topline__location{
+                    text-decoration: none;
+                    font-size: 12px;
+                    color:#2D3132;
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        width: 10px;
+                        height: 12px;
+                        background: url('/src/img/card-icons/location.png');
+                        position: relative;
+                        top: 1px;
+                        left: -4px;
+                    }
+                }
+            }
+            .card__footer_bootomline{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    color:#2D3132;
+                    font-size: 14px;
+                    font-family: 'Stolzl-Medium';
+                }
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 8px;
+                }
+                .bottomline__salesman{
+                    text-decoration: none;
+                    font-size: 12px;
+                    color:#2D3132;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

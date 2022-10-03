@@ -1,0 +1,43 @@
+// ПОДКЛЮЧЕНИЕ БЛОКОВ СТИЛЕЙ
+@import "./adaptiveValue.scss";
+@import "./burger.scss";
+@import "./header.scss";
+@import "./contentHeader.scss";
+@import "./toolbar.scss";
+@import "./card.scss";
+@import "./pagination.scss";
+@import "./footer.scss";
+// ПОДКЛЮЧЕНИЕ ШРИФТОВ
+@font-face {
+    font-family: 'Stolzl';
+    src: local('Stolzl Regular'), local('Stolzl-Regular'),
+        url('/src/fonts/Stolzl-Regular.woff2') format('woff2'),
+        url('/src/fonts/Stolzl-Regular.woff') format('woff'),
+        url('/src/fonts/Stolzl-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Stolzl-Medium';
+    src: local('Stolzl Medium'), local('Stolzl-Medium'),
+        url('/src/fonts/Stolzl-Medium.woff2') format('woff2'),
+        url('/src/fonts/Stolzl-Medium.woff') format('woff'),
+        url('/src/fonts/Stolzl-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+// ОБЩИЕ СТИЛИ
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Stolzl';
+    color: #2D3132;
+    overflow-x: hidden;
+}
+p{
+    margin: 0 ;
+}
+// ПОДКЛЮЧЕНИЕ @MEDIA ЗАПРОСОВ
+@import "./media.scss";

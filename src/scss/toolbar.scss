@@ -1,0 +1,100 @@
+// ########################## CONTENT TOOLBAR ###########################
+.content{
+    .content__wrapper{
+        position: relative;
+        margin-top: 24px;
+        width: 100%;
+        overflow-x: hidden;
+        .row{
+            .content__toolbar_wrapper{
+                overflow-y: hidden;
+                position: relative;
+                transition: 1s;
+                -moz-transition: 1s;
+                -webkit-transition: 1s;
+                -o-transition: 1s;
+            }
+            .content__toolbar{
+                background-color: #fff;
+                z-index: 50;
+                transition: 1s;
+                --bs-accordion-border-radius: 0;
+                .accordion-item{
+                    border: 1px solid #EFF1F1;
+                    border-radius: 4px;
+                    margin-top: 2px;
+                }
+                .accordion-header{
+                    --bs-accordion-btn-focus-box-shadow: none;
+                    .accordion-button{
+                        background: #EFF1F1;
+                        color: #444748;
+                    }
+                }
+                .accordion-body{
+                    color: #5C5F60;
+                    padding: 0;
+                }
+                .toolbar__categories{
+                    display: flex;
+                    flex-direction: column;
+                    :nth-child(1){
+                        border-top: 1px solid #EFF1F1;
+                    }
+                    a{  
+                        color: #444748;
+                        width: 100%;
+                        text-decoration: none;
+                        padding: 15px 0;
+                        border-bottom: 1px solid #EFF1F1;
+                        padding-left: 20px;
+                        &:hover{
+                            background-color: #EFF1F1;
+                        }
+                    }
+                }
+                .toolbar__slider{
+                    padding: 20px;
+                    .toolbar__prices{
+                        margin-top: 20px;
+                        display: flex;
+                        width: 100%;
+                        p{
+                            color: #747778;
+                            font-size: 10px;
+                        }
+                        .toolbar__from, .toolbar__to{
+                            width: 50%;
+                            input{
+                                color: #2D3132;
+                                font-size: 12px;
+                                max-width: 80%;
+                                border: none;
+                                outline: none;
+                                border-bottom: 1px solid #747778;
+                            }
+                        }
+                    }
+                }
+                .toolbar__salesman{
+                    padding: 20px;
+                    .form-check{
+                        margin: 12px 0;
+                    }
+                    .form-check-input:checked{
+                        background-color: #2D3132;
+                        border-color: #2D3132;
+                    }
+                    .form-check-label{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+            .show__toolbar{
+            height: auto;
+            }
+        }
+    }
+}

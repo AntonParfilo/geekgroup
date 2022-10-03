@@ -1,0 +1,166 @@
+// ###########################  SEARCH FORM ###################################
+.burger__search{
+    position: absolute;
+    transform: translateY(-120%);
+    transition: 1s;
+    background: rgb(99,100,101);
+    background: linear-gradient(0deg, rgba(99,100,101,1) 35%, rgba(45,49,50,1) 100%); 
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    .burger__search_close{
+        margin-bottom: 16px;
+        fill: #fff;
+        width: 20pxx;
+        height: 20px;
+    }
+    .burger__header__serach-wrapper{
+        margin: 0 auto;
+        position: relative;
+        height: 40px;
+        width: 90%;
+        border: 1px #ccc solid;
+        border-radius: 4px;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 12px;
+            left: 10px;
+            background: url("/src/img/header/search.png");
+            width: 20px;
+            height: 20px;
+        }
+        .burger__header__search{
+            border: none;
+            border-radius: 4px;
+            padding-left: 40px;
+            height: 100%;
+            width: 100%;
+            font-size: 12px;
+            outline: none;
+        }
+    }
+}
+// ###########################  BURGER MENU ###################################
+.header__burger_menu{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgb(99,100,101);
+    background: linear-gradient(0deg, rgba(99,100,101,1) 35%, rgba(45,49,50,1) 100%);  
+    transform: translateY(-120%);
+    transition: 1s;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .burger__closeBtn{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        fill: #fff;
+        width: 20px;
+        height: 20px;
+    }
+    .burger__header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .burger__form-select{
+            width: fit-content;
+            background: none;
+            border: 0;
+            outline: none;
+            border: none;
+        }
+        .burger__header__mainmenu{
+            a{  
+                position: relative;
+                text-decoration: none;
+                margin: 0 5px;
+                svg{
+                    position: relative;
+                    width: 35px;
+                    height: 35px;
+                    fill: #c2c6c7;
+                }
+                .action-number{
+                    position: absolute;
+                    top: -7px;
+                    right: -4px;
+                    padding: 0 5px;
+                    background-color: #e7e7e7;
+                    z-index: 2;
+                    color: #000;
+                    font-size: 10px;
+                    border: 2px #fff solid;
+                    border-radius: 50%;
+                }
+                .action-number-red{
+                    color: #fff;
+                    background-color: #FF5449;
+                }
+            }
+        }
+        .burger__header__user-menu{
+            #dropdownMenuButton11{
+                border: none;
+                background: none;
+            }
+        }
+        .burger__form-select{
+            color: #fff;
+            option{
+                color: #000;
+            }
+        }
+    }
+    .burger__header__menu{
+        width: 100%;
+        border-top: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        ul{ 
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li{ 
+                height: 100%;
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 10px 0;
+                list-style-type: none;
+                border-bottom: 2px rgba(0,0,0,0) solid;
+                overflow: hidden;
+                &:hover{
+                    transition: .5s;
+                    cursor: pointer;
+                    border-bottom: 2px #fff solid;
+                }
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    margin: 0 16px;
+                    font-size: 16px;
+                    font-family: 'Stolzl-Medium';
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+.open{
+    transform: translateY(0%);
+}
