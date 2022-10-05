@@ -31,6 +31,9 @@
     .card-body{
         padding: 46px 24px 24px;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .card__top{
             position: absolute;
             top: -11px;

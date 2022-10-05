@@ -643,6 +643,9 @@
 .card .card-body {
   padding: 46px 24px 24px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card .card-body .card__top {
   position: absolute;
